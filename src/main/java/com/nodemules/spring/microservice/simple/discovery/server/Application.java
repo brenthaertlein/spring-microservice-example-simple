@@ -1,4 +1,4 @@
-package com.nodemules.spring.microservice.example.simple;
+package com.nodemules.spring.microservice.simple.discovery.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
