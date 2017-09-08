@@ -6,7 +6,14 @@
 
     <groupId>com.nodemules.spring.microservices</groupId>
     <artifactId>SimpleMicroserviceExample</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    
+    <modules>
+        <module>WebclientServer</module>
+        <module>AccountsServer</module>
+        <module>DiscoveryServer</module>
+    </modules>
 
     <name>simple-microservice-example</name>
     <description>It is microservice application using Spring Boot</description>
@@ -23,5 +30,26 @@
         <version>1.5.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR5</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.nodemules.spring.microservices</groupId>
-    <artifactId>AccountsMicroservice</artifactId>
+    <artifactId>AccountsServer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>accounts-microservice</name>
+    <name>accounts-server</name>
     <description>It is microservice discovery server using Spring Boot</description>
 
     <properties>
